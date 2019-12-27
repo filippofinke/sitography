@@ -42,7 +42,7 @@ function showSavedPages() {
     savedPagesDiv.innerHTML = "";
     for (var page of urls) {
         var paragraph = document.createElement('p');
-        paragraph.innerHTML = page.url + ', <i>' + page.title + '</i> ' + page.date;
+        paragraph.innerHTML = page.url + ', <i>' + page.title + '</i>, ' + page.date;
         savedPagesDiv.append(paragraph);
     }
 }
